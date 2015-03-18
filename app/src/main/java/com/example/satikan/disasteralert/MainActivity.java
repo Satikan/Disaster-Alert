@@ -17,6 +17,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
     private ImageButton watherBuntton;
     private ImageButton facebookButton;
+    private ImageButton waterlavelButton;
+    private ImageButton waterinriverButton;
+    private ImageButton dailytidalButton;
 
 
     @Override
@@ -26,9 +29,16 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
         watherBuntton = (ImageButton) findViewById(R.id.watherbutton);
         facebookButton = (ImageButton) findViewById(R.id.facebookbutton);
+        waterlavelButton = (ImageButton) findViewById(R.id.waterlevelbutton);
+        waterinriverButton = (ImageButton) findViewById(R.id.waterinriverbutton);
+        dailytidalButton = (ImageButton) findViewById(R.id.dailytidalbutton);
+
 
         watherBuntton.setOnClickListener(this);
         facebookButton.setOnClickListener(this);
+        waterlavelButton.setOnClickListener(this);
+        waterinriverButton.setOnClickListener(this);
+        dailytidalButton.setOnClickListener(this);
 
 
 
@@ -70,12 +80,28 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.watherbutton:
-                Intent intent = new Intent(this, MapsActivityWather.class);
+                Intent intent = new Intent(this, MainActivityWather.class);
                 startActivity(intent);
                 break;
 
             case R.id.facebookbutton:
                 intent = new Intent(this, MainActivityFacebook.class);
+                startActivity(intent);
+                break;
+
+            case R.id.waterlevelbutton:
+                intent = new Intent(this, MapsActivityWaterlavel.class);
+                startActivity(intent);
+                break;
+
+            case R.id.waterinriverbutton:
+                intent = new Intent(this, MainActivityWaterInRiver.class);
+                startActivity(intent);
+                break;
+
+
+            case R.id.dailytidalbutton:
+                intent = new Intent(this, MainActivityDailyTidal.class);
                 startActivity(intent);
                 break;
         }

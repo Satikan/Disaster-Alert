@@ -100,14 +100,14 @@
         <ImageButton
             android:layout_width="350dp"
             android:layout_height="60dp"
-            android:id="@+id/dailytidalbutton"
+            android:id="@+id/waterinriverbutton"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/iconc" />
 
         <ImageButton
             android:layout_width="350dp"
             android:layout_height="60dp"
-            android:id="@+id/rainfallbutton"
+            android:id="@+id/dailytidalbutton"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/icond" />
 
