@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Disaster Alert</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps_activity_wather">Map</string>
+    <string name="title_activity_main_activity_facebook">MainActivityFacebook</string>
+
+    <string name="app_id">1730891810470512</string>
+
+</resources>

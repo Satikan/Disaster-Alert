@@ -1,0 +1,15 @@
+Index: app/src/main/res/layout/activity_main_activity_facebook.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_main_activity_facebook.xml	(date 1426418085000)
++++ app/src/main/res/layout/activity_main_activity_facebook.xml	(revision )
+@@ -9,5 +9,5 @@
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:layout_marginTop="50dp" />
+-    
++
+ </LinearLayout>
+\ No newline at end of file
