@@ -47,14 +47,16 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp">
 
-        <EditText
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:id="@+id/editText"
-            android:background="#fdfffbfa"
-            android:layout_weight="0.04"
-            android:layout_marginRight="10dp"
-            android:autoText="false" />
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView2"
+            android:autoText="false"
+            android:text="ขณะนี้สถานการณ์น้ำปกติ..."
+            android:background="#ffffffff"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp" />
 
         <ImageView
             android:layout_width="0dp"
@@ -81,7 +83,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal"
         android:weightSum="1"
-        android:layout_marginTop="15dp">
+        android:layout_marginTop="20dp">
 
         <ImageButton
             android:layout_width="350dp"

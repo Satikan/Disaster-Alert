@@ -20,6 +20,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     private ImageButton waterlavelButton;
     private ImageButton waterinriverButton;
     private ImageButton dailytidalButton;
+    private ImageButton emergencycallButton;
 
 
     @Override
@@ -32,6 +33,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         waterlavelButton = (ImageButton) findViewById(R.id.waterlevelbutton);
         waterinriverButton = (ImageButton) findViewById(R.id.waterinriverbutton);
         dailytidalButton = (ImageButton) findViewById(R.id.dailytidalbutton);
+        emergencycallButton = (ImageButton) findViewById(R.id.emergencycallbutton);
 
 
         watherBuntton.setOnClickListener(this);
@@ -39,6 +41,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         waterlavelButton.setOnClickListener(this);
         waterinriverButton.setOnClickListener(this);
         dailytidalButton.setOnClickListener(this);
+        emergencycallButton.setOnClickListener(this);
 
 
 
@@ -102,6 +105,11 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
             case R.id.dailytidalbutton:
                 intent = new Intent(this, MainActivityDailyTidal.class);
+                startActivity(intent);
+                break;
+
+            case R.id.emergencycallbutton:
+                intent = new Intent(this, MainActivityEmergencyCall.class);
                 startActivity(intent);
                 break;
         }

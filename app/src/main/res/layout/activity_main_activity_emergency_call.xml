@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/btnCall"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="bangkok  hospital"
+        android:longClickable="false" />
+
+    <Button
+        android:id="@+id/btnCall1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Rescue  Efforts  Foundation"
+        android:longClickable="false" />
+
+    <Button
+        android:id="@+id/btnCall2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:text="Kathu  Police  Station"
+        android:longClickable="false" />
+
+    <Button
+        android:id="@+id/btnCall3"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:text="Phuket Municipal"
+        android:longClickable="false" />
+
+    <Button
+        android:id="@+id/btnCall4"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="280dp"
+        android:text="Chalong  Rescue  Efforts  Foundation"
+        android:longClickable="false" />
+
+    <Button
+        android:id="@+id/btnCall5"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="340dp"
+        android:text="Kathu  Rescue  Efforts  Foundation"
+        android:longClickable="false" />
+
+</RelativeLayout>

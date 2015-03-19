@@ -6,27 +6,29 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.widget.MediaController;
+import android.widget.VideoView;
 
 
 public class MainActivityWaterInRiver extends ActionBarActivity {
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_activity_water_in_river);
 
-        WebView myWebView = (WebView) findViewById(R.id.webView1);
-        WebSettings webSettings = myWebView.getSettings();
-        webSettings.setJavaScriptEnabled(true);
-        myWebView.getSettings().setBuiltInZoomControls(true);
-        myWebView.loadUrl("http://www.hydro-8.com/main/phuket/index.html");
+        final VideoView videoView = (VideoView)
+                findViewById(R.id.videoView);
 
+        videoView.setVideoPath(
+                "http://www.hydro-8.com/main/phuket/index.html");
 
+        MediaController mediaController = new
+                MediaController(this);
+        mediaController.setAnchorView(videoView);
+        videoView.setMediaController(mediaController);
+
+        videoView.start();
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.activity_main_activity_water_in_river, menu);
-        return true;
-    }
 }
