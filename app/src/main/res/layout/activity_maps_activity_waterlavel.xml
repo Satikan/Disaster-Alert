@@ -1,5 +1,319 @@
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:id="@+id/map"
-    tools:context="com.example.satikan.disasteralert.MapsActivityWaterlavel"
-    android:name="com.google.android.gms.maps.SupportMapFragment" />
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ปริมาณฝน"
+        android:id="@+id/textRain"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp"
+        android:textColor="#ffff0509"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="80dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView1"
+        android:autoText="false"
+        android:background="#ff1011ff"
+        android:layout_gravity="right"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textRain"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="80dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView2"
+        android:autoText="false"
+        android:background="#ff1011ff"
+        android:layout_gravity="right"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toEndOf="@+id/textView1"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView3"
+        android:autoText="false"
+        android:background="#ff20fffa"
+        android:layout_gravity="right"
+        android:layout_below="@+id/textView1"
+        android:layout_alignStart="@+id/textView1"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView4"
+        android:autoText="false"
+        android:background="#ff20fffa"
+        android:layout_gravity="right"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignStart="@+id/textView2" />
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView5"
+        android:autoText="false"
+        android:background="#ff20fffa"
+        android:layout_gravity="right"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView6"
+        android:autoText="false"
+        android:background="#ff20fffa"
+        android:layout_gravity="right"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView7"
+        android:autoText="false"
+        android:background="#ff20fffa"
+        android:layout_gravity="right"
+        android:layout_below="@+id/textView5"
+        android:layout_toStartOf="@+id/textView2"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView8"
+        android:autoText="false"
+        android:background="#ff20fffa"
+        android:layout_gravity="right"
+        android:layout_below="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView9"
+        android:autoText="false"
+        android:background="#ff20fffa"
+        android:layout_gravity="right"
+        android:layout_below="@+id/textView7"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView10"
+        android:autoText="false"
+        android:background="#ff20fffa"
+        android:layout_gravity="right"
+        android:layout_alignTop="@+id/textView9"
+        android:layout_alignStart="@+id/textView8" />
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView11"
+        android:autoText="false"
+        android:background="#ff20fffa"
+        android:layout_gravity="right"
+        android:layout_below="@+id/textView9"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView12"
+        android:autoText="false"
+        android:background="#ff20fffa"
+        android:layout_gravity="right"
+        android:layout_alignTop="@+id/textView11"
+        android:layout_alignEnd="@+id/textView10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="สถานี"
+        android:id="@+id/textViewStation"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_alignStart="@+id/textView1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="48dp"
+        android:textSize="30dp"
+        android:textColor="#ff2ffffd"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/textStationPhuKet"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:textColor="#fff421ff"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="70dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/textStationKeTho"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:textColor="#fff421ff"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="70dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/textStationM"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:textColor="#fff421ff"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="70dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/textSum"
+        android:layout_alignTop="@+id/textView10"
+        android:layout_alignStart="@+id/textView10"
+        android:textColor="#ffffee25"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="70dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/textAverage"
+        android:layout_alignTop="@+id/textView12"
+        android:layout_alignStart="@+id/textView12"
+        android:textColor="#ffffee25"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="65dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="คท.ภูเก็ต"
+        android:id="@+id/textView18"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:textColor="#fff421ff"
+        android:textStyle="bold"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="X.190A บ้านเก็ตโฮ่"
+        android:id="@+id/textView19"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#fff421ff"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="อำเภอเมือง"
+        android:id="@+id/textView20"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_alignStart="@+id/textView7"
+        android:textStyle="bold"
+        android:textColor="#fff421ff"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="รวม"
+        android:id="@+id/textView21"
+        android:layout_alignTop="@+id/textView9"
+        android:layout_alignStart="@+id/textView9"
+        android:textColor="#ffffee25"
+        android:layout_marginTop="10dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="60dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="เฉลี่ย"
+        android:id="@+id/textView22"
+        android:layout_alignTop="@+id/textView11"
+        android:layout_alignStart="@+id/textView11"
+        android:textColor="#ffffee25"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="52dp"
+        android:textStyle="bold"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ปริมาณฝน (มม.)"
+        android:id="@+id/textView23"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:textColor="#ff2ffffd"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="5dp" />
+
+
+</RelativeLayout>

@@ -14,5 +14,7 @@
     <string name="title_activity_main_activity_water_in_river">MainActivityWaterInRiver</string>
     <string name="title_activity_main_activity_daily_tidal">MainActivityDailyTidal</string>
     <string name="title_activity_main_activity_emergency_call">MainActivityEmergencyCall</string>
+    <string name="title_activity_update">UpdateActivity</string>
+    <string name="title_activity_main_activity_notification">MainActivityNotification</string>
 
 </resources>
