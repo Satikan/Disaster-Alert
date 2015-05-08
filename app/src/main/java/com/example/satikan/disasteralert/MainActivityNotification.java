@@ -10,7 +10,6 @@ import android.graphics.BitmapFactory;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.support.v4.app.NotificationCompat;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -53,7 +52,7 @@ public class MainActivityNotification extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_activity_notification);
 
-        TextView textAlert = (TextView) findViewById(R.id.textAlert);
+        TextView textAlert = (TextView) findViewById(R.id.textsum);
         new GetAvg(this, textAlert).execute();
 
         Intent MyIntent = new Intent(MainActivityNotification.this, UpdateActivity.class);

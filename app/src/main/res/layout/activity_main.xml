@@ -1,9 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
     android:background="@drawable/bg"
     android:weightSum="1"
     android:backgroundTintMode="screen"
@@ -17,54 +15,32 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal">
 
-        <TextView
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Disaster Alert"
-            android:id="@+id/textView"
-            android:textSize="40dp"
-            android:textColor="#fffff718"
-            android:textColorHighlight="#ff1b1aff"
-            android:textStyle="bold"
-            android:focusable="false"
-            android:textIsSelectable="false" />
-
-        <ImageButton
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:id="@+id/facebookbutton"
-            android:background="@drawable/iconf"
-            android:layout_marginLeft="40dp" />
+            android:id="@+id/imagetitel"
+            android:background="@drawable/title"
+            android:adjustViewBounds="false" />
 
     </LinearLayout>
 
 
-    <LinearLayout
+    <RelativeLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp">
+        android:layout_gravity="center_horizontal">
 
         <TextView
-            android:layout_width="180dp"
-            android:layout_height="100dp"
+            android:layout_width="360dp"
+            android:layout_height="180dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/textAlert"
+            android:id="@+id/textsum"
             android:autoText="false"
-            android:background="#ffffffff"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="10dp" />
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="65dp"
-            android:id="@+id/imageView"
-            android:layout_weight="0.04"
-            android:adjustViewBounds="false"
-            android:background="@drawable/w"
-            android:layout_marginTop="20dp" />
+            android:background="#ffb2ffff"
+            android:layout_marginTop="45dp"
+            android:layout_weight="0.01"
+            android:textColor="#ffb9ffff" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -72,61 +48,65 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="result"
             android:id="@+id/txtResult"
-            android:layout_gravity="right" />
+            android:layout_gravity="right"
+            android:textColor="#ffff050e"
+            android:textSize="20dp"
+            android:layout_alignTop="@+id/textsum"
+            android:layout_alignParentEnd="true" />
 
-    </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textAlert"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textSize="30dp"
+            android:layout_marginTop="200dp" />
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="401dp"
-        android:layout_height="match_parent"
-        android:layout_gravity="center_horizontal"
-        android:weightSum="1"
-        android:layout_marginTop="20dp">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
 
         <ImageButton
-            android:layout_width="350dp"
-            android:layout_height="60dp"
+            android:layout_width="190dp"
+            android:layout_height="130dp"
             android:id="@+id/watherbutton"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/icona" />
+            android:background="@drawable/icona"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/emergencycallbutton" />
 
         <ImageButton
-            android:layout_width="350dp"
-            android:layout_height="60dp"
+            android:layout_width="190dp"
+            android:layout_height="130dp"
             android:id="@+id/waterlevelbutton"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/iconb" />
+            android:background="@drawable/iconb"
+            android:layout_alignTop="@+id/watherbutton"
+            android:layout_toEndOf="@+id/watherbutton" />
 
         <ImageButton
-            android:layout_width="350dp"
-            android:layout_height="60dp"
+            android:layout_width="190dp"
+            android:layout_height="130dp"
             android:id="@+id/waterinriverbutton"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/iconc" />
+            android:background="@drawable/iconc"
+            android:layout_alignBottom="@+id/emergencycallbutton"
+            android:layout_toStartOf="@+id/emergencycallbutton" />
 
         <ImageButton
-            android:layout_width="350dp"
-            android:layout_height="60dp"
-            android:id="@+id/dailytidalbutton"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/icond" />
-
-        <ImageButton
-            android:layout_width="350dp"
-            android:layout_height="60dp"
+            android:layout_width="190dp"
+            android:layout_height="130dp"
             android:id="@+id/emergencycallbutton"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/icone" />
-
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
-        android:id="@+id/textAverage"
-        android:layout_gravity="center_horizontal" />
+            android:background="@drawable/icond"
+            android:layout_below="@+id/watherbutton"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
 
 </LinearLayout>

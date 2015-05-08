@@ -17,7 +17,7 @@ public class MainActivityWather extends ActionBarActivity {
         WebView WebViw = (WebView) findViewById(R.id.webView1);
         WebViw.getSettings().setJavaScriptEnabled(true);
         WebViw.getSettings().setBuiltInZoomControls(true);
-        WebViw.loadUrl("http://www.tmd.go.th/province.php?id=75");
+        WebViw.loadUrl("http://disasteralert.esy.es/d/");
 
     }
 

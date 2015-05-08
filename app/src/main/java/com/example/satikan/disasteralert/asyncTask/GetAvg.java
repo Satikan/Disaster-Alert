@@ -122,7 +122,7 @@ public class GetAvg extends AsyncTask<String, Integer, String> {
             String result = "ปกติ";
 
             if (average > 125 ){
-                result = "น้ำท่วมเมืองภูเก็ตได้ ในอีก 1-2 วันข้างหน้า";
+                result = "คาดการณ์ว่าน้ำอาจจะท่วมภายในอีก 1-2 วันข้างหน้า";
 
             }
 

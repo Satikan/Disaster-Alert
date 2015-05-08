@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 
 public class MainActivityEmergencyCall extends ActionBarActivity {
@@ -17,67 +18,67 @@ public class MainActivityEmergencyCall extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_activity_emergency_call);
 
-        Button btnCall = (Button) findViewById(R.id.btnCall);
+        ImageButton btnCall = (ImageButton) findViewById(R.id.imageButtonWater);
         btnCall.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
                 Intent newActivity = new Intent(Intent.ACTION_CALL);
-                newActivity.setData(Uri.parse("tel:0762544425"));
+                newActivity.setData(Uri.parse("tel:1196"));
                 startActivity(newActivity);
 
             }
         });
 
-        Button btnCall1 = (Button) findViewById(R.id.btnCall1);
+        ImageButton btnCall1 = (ImageButton) findViewById(R.id.imageButtonHelp);
         btnCall1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
                 Intent newActivity = new Intent(Intent.ACTION_CALL);
-                newActivity.setData(Uri.parse("tel:0762833467"));
+                newActivity.setData(Uri.parse("tel:1169"));
                 startActivity(newActivity);
 
             }
         });
 
-        Button btnCall2 = (Button) findViewById(R.id.btnCall2);
+        ImageButton btnCall2 = (ImageButton) findViewById(R.id.imageButtonDocter);
         btnCall2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
                 Intent newActivity = new Intent(Intent.ACTION_CALL);
-                newActivity.setData(Uri.parse("tel:342719"));
+                newActivity.setData(Uri.parse("tel:1154"));
                 startActivity(newActivity);
 
             }
         });
 
-        Button btnCall3 = (Button) findViewById(R.id.btnCall3);
+        ImageButton btnCall3 = (ImageButton) findViewById(R.id.imageButtonHospital1);
         btnCall3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
                 Intent newActivity = new Intent(Intent.ACTION_CALL);
-                newActivity.setData(Uri.parse("tel:0222644448"));
+                newActivity.setData(Uri.parse("tel:076211114"));
                 startActivity(newActivity);
 
             }
         });
 
-        Button btnCall4 = (Button) findViewById(R.id.btnCall4);
+        ImageButton btnCall4 = (ImageButton) findViewById(R.id.imageButtonHospital2);
         btnCall4.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
                 Intent newActivity = new Intent(Intent.ACTION_CALL);
-                newActivity.setData(Uri.parse("tel:0222644448"));
+                newActivity.setData(Uri.parse("tel:076254425"));
                 startActivity(newActivity);
 
             }
         });
 
-        Button btnCall5 = (Button) findViewById(R.id.btnCall5);
+        ImageButton btnCall5 = (ImageButton) findViewById(R.id.imageButtonHospital3);
         btnCall5.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
                 Intent newActivity = new Intent(Intent.ACTION_CALL);
-                newActivity.setData(Uri.parse("tel:0222644448"));
+                newActivity.setData(Uri.parse("tel:076249400"));
                 startActivity(newActivity);
 
             }

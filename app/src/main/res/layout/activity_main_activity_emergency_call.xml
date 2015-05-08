@@ -1,66 +1,217 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
 
-    <Button
-        android:id="@+id/btnCall"
-        android:layout_width="250dp"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Emergency Call"
+        android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="42dp"
-        android:text="bangkok  hospital"
-        android:longClickable="false" />
+        android:textColor="#ffff070b"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp" />
 
-    <Button
-        android:id="@+id/btnCall1"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:text="Rescue  Efforts  Foundation"
-        android:longClickable="false" />
+        android:layout_marginTop="15dp">
 
-    <Button
-        android:id="@+id/btnCall2"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="160dp"
-        android:text="Kathu  Police  Station"
-        android:longClickable="false" />
+        <TextView
+            android:layout_width="270dp"
+            android:layout_height="70dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView34"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:background="#ffff8669"
+            android:layout_marginLeft="5dp" />
 
-    <Button
-        android:id="@+id/btnCall3"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="220dp"
-        android:text="Phuket Municipal"
-        android:longClickable="false" />
+        <TextView
+            android:layout_width="270dp"
+            android:layout_height="70dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView35"
+            android:background="#ffff8669"
+            android:layout_below="@+id/textView34"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:autoText="false" />
 
-    <Button
-        android:id="@+id/btnCall4"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="280dp"
-        android:text="Chalong  Rescue  Efforts  Foundation"
-        android:longClickable="false" />
+        <TextView
+            android:layout_width="270dp"
+            android:layout_height="70dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView36"
+            android:background="#ffff8669"
+            android:layout_below="@+id/textView35"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp" />
 
-    <Button
-        android:id="@+id/btnCall5"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="340dp"
-        android:text="Kathu  Rescue  Efforts  Foundation"
-        android:longClickable="false" />
+        <TextView
+            android:layout_width="270dp"
+            android:layout_height="70dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView37"
+            android:background="#ffff8669"
+            android:layout_below="@+id/textView36"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="270dp"
+            android:layout_height="70dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView42"
+            android:background="#ffff8669"
+            android:layout_below="@+id/textView37"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="270dp"
+            android:layout_height="70dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView43"
+            android:background="#ffff8669"
+            android:layout_marginLeft="5dp"
+            android:layout_alignBottom="@+id/imageButtonHospital3"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/imageButtonWater"
+            android:layout_alignTop="@+id/textView34"
+            android:layout_toEndOf="@+id/textView35"
+            android:background="@drawable/call"
+            android:layout_marginLeft="5dp" />
+
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/imageButtonHelp"
+            android:background="@drawable/call"
+            android:layout_alignTop="@+id/textView35"
+            android:layout_alignStart="@+id/imageButtonWater" />
+
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/imageButtonDocter"
+            android:background="@drawable/call"
+            android:layout_marginLeft="5dp"
+            android:layout_above="@+id/textView37"
+            android:layout_toEndOf="@+id/textView36" />
+
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/imageButtonHospital1"
+            android:background="@drawable/call"
+            android:layout_alignBottom="@+id/textView37"
+            android:layout_alignStart="@+id/imageButtonDocter" />
+
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/imageButtonHospital2"
+            android:background="@drawable/call"
+            android:layout_above="@+id/imageButtonHospital3"
+            android:layout_alignStart="@+id/imageButtonHospital1" />
+
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/imageButtonHospital3"
+            android:background="@drawable/call"
+            android:layout_below="@+id/textView42"
+            android:layout_alignStart="@+id/imageButtonHelp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="อุบัติเหตุทางน้ำ"
+            android:id="@+id/textView44"
+            android:layout_alignTop="@+id/textView34"
+            android:layout_alignParentStart="true"
+            android:textSize="35dp"
+            android:textIsSelectable="false"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="เจ็บป่วยฉุกเฉิน"
+            android:id="@+id/textView45"
+            android:layout_alignTop="@+id/textView35"
+            android:layout_alignStart="@+id/textView35"
+            android:textSize="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="หน่วยแพทย์กู้ชีพ"
+            android:id="@+id/textView46"
+            android:layout_below="@+id/textView35"
+            android:layout_alignStart="@+id/textView35"
+            android:textSize="35dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="โรงพยาบาลวัชชิระ ภูเก็ต"
+            android:id="@+id/textView47"
+            android:layout_alignTop="@+id/imageButtonHospital1"
+            android:layout_alignStart="@+id/textView37"
+            android:textSize="23dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="โรงพยาบาลกรุงเทพ ภูเก็ต"
+            android:id="@+id/textView48"
+            android:layout_alignTop="@+id/imageButtonHospital2"
+            android:layout_alignStart="@+id/textView42"
+            android:textSize="23dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="13dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="โรงพยาบาลสิริโรจน์ ภูเก็ต"
+            android:id="@+id/textView49"
+            android:layout_below="@+id/imageButtonHospital2"
+            android:layout_alignStart="@+id/textView42"
+            android:textSize="23dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="13dp" />
+    </RelativeLayout>
 
 </RelativeLayout>

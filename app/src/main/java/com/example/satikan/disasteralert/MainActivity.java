@@ -10,13 +10,11 @@ import android.graphics.BitmapFactory;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.support.v4.app.NotificationCompat;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -33,7 +31,6 @@ public class MainActivity extends Activity implements OnClickListener {
 
 
     private ImageButton watherBuntton;
-    private ImageButton facebookButton;
     private ImageButton waterlavelButton;
     private ImageButton waterinriverButton;
     private ImageButton emergencycallButton;
@@ -46,14 +43,12 @@ public class MainActivity extends Activity implements OnClickListener {
         setContentView(R.layout.activity_main);
 
         watherBuntton = (ImageButton) findViewById(R.id.watherbutton);
-        facebookButton = (ImageButton) findViewById(R.id.facebookbutton);
         waterlavelButton = (ImageButton) findViewById(R.id.waterlevelbutton);
         waterinriverButton = (ImageButton) findViewById(R.id.waterinriverbutton);
         emergencycallButton = (ImageButton) findViewById(R.id.emergencycallbutton);
 
 
         watherBuntton.setOnClickListener(this);
-        facebookButton.setOnClickListener(this);
         waterlavelButton.setOnClickListener(this);
         waterinriverButton.setOnClickListener(this);
         emergencycallButton.setOnClickListener(this);
@@ -73,8 +68,8 @@ public class MainActivity extends Activity implements OnClickListener {
         TextView textAlert = (TextView) findViewById(R.id.textAlert);
         new GetAvg(this, textAlert).execute();
 
-        TextView textAverage = (TextView) findViewById(R.id.textAlert);
-        textAverage.setText(singleton.getAverage());
+        /*TextView textAverage = (TextView) findViewById(R.id.textsum);
+        textAverage.setText(singleton.getAverage());  */
 
         Intent MyIntent = new Intent(MainActivity.this, UpdateActivity.class);
         PendingIntent pI = PendingIntent.getActivity(MainActivity.this, 0, MyIntent, 0);
@@ -127,11 +122,6 @@ public class MainActivity extends Activity implements OnClickListener {
         switch (v.getId()) {
             case R.id.watherbutton:
                 Intent intent = new Intent(this, MainActivityWather.class);
-                startActivity(intent);
-                break;
-
-            case R.id.facebookbutton:
-                intent = new Intent(this, MainActivityFacebook.class);
                 startActivity(intent);
                 break;
 
