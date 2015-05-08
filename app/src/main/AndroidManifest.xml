@@ -53,7 +53,7 @@
         </activity>
         <activity
             android:name=".MainActivityWather"
-            android:label="@string/title_activity_main_activity_wather" >
+            android:label="@string/title_activity_main_activity_wather">
         </activity>
         <activity
             android:name=".MainActivityWaterInRiver"

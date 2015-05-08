@@ -28,7 +28,7 @@
     <RelativeLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="212dp"
         android:layout_gravity="center_horizontal">
 
         <TextView
@@ -38,7 +38,7 @@
             android:id="@+id/textsum"
             android:autoText="false"
             android:background="#ffb2ffff"
-            android:layout_marginTop="45dp"
+            android:layout_marginTop="40dp"
             android:layout_weight="0.01"
             android:textColor="#ffb9ffff" />
 
@@ -49,7 +49,7 @@
             android:text="result"
             android:id="@+id/txtResult"
             android:layout_gravity="right"
-            android:textColor="#ffff050e"
+            android:textColor="#ff060000"
             android:textSize="20dp"
             android:layout_alignTop="@+id/textsum"
             android:layout_alignParentEnd="true" />
@@ -62,9 +62,10 @@
             android:layout_centerVertical="true"
             android:layout_alignParentStart="true"
             android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:textSize="30dp"
-            android:layout_marginTop="200dp" />
+            android:textSize="28dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#ffff2117" />
 
     </RelativeLayout>
 
@@ -73,40 +74,42 @@
         android:layout_height="fill_parent">
 
         <ImageButton
-            android:layout_width="190dp"
+            android:layout_width="195dp"
             android:layout_height="130dp"
             android:id="@+id/watherbutton"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/icona"
-            android:layout_alignParentTop="true"
-            android:layout_toStartOf="@+id/emergencycallbutton" />
+            android:layout_above="@+id/waterinriverbutton"
+            android:layout_alignParentStart="true" />
 
         <ImageButton
-            android:layout_width="190dp"
+            android:layout_width="195dp"
             android:layout_height="130dp"
             android:id="@+id/waterlevelbutton"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/iconb"
-            android:layout_alignTop="@+id/watherbutton"
+            android:layout_above="@+id/emergencycallbutton"
+            android:layout_alignParentEnd="true"
             android:layout_toEndOf="@+id/watherbutton" />
 
         <ImageButton
-            android:layout_width="190dp"
+            android:layout_width="195dp"
             android:layout_height="130dp"
             android:id="@+id/waterinriverbutton"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/iconc"
-            android:layout_alignBottom="@+id/emergencycallbutton"
-            android:layout_toStartOf="@+id/emergencycallbutton" />
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/watherbutton" />
 
         <ImageButton
-            android:layout_width="190dp"
+            android:layout_width="195dp"
             android:layout_height="130dp"
             android:id="@+id/emergencycallbutton"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/icond"
-            android:layout_below="@+id/watherbutton"
-            android:layout_alignParentEnd="true" />
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/watherbutton" />
     </RelativeLayout>
 
 </LinearLayout>
