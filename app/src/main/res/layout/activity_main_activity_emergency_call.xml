@@ -181,7 +181,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="โรงพยาบาลวัชชิระ ภูเก็ต"
+            android:text="โรงพยาบาลวชิระ ภูเก็ต"
             android:id="@+id/textView47"
             android:layout_alignTop="@+id/imageButtonHospital1"
             android:layout_alignStart="@+id/textView37"

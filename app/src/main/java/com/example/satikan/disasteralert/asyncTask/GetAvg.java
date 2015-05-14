@@ -119,7 +119,7 @@ public class GetAvg extends AsyncTask<String, Integer, String> {
             singleton.setX191level(Level);
             singleton.setX191volume(Volume);
 
-            String result = "ปกติ";
+            String result = "สถานการณ์น้ำปกติ";
 
             if (average > 125 ){
                 result = "คาดการณ์ว่าน้ำอาจจะท่วม ภายในอีก 1-2 วันข้างหน้า";
